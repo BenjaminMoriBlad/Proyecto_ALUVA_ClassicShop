@@ -1,0 +1,729 @@
+/* ==========================================================================
+   ALUVA - PERSONALIZACIÓN SOBRE TEMPLATE CLASSIC SHOP (ASSAN / BOOTSTRAP 4)
+   ========================================================================== */
+
+:root {
+  --aluva-primary: #1e293b;
+  --aluva-accent: #d97706; /* Naranjo Industrial de Seguridad */
+  --aluva-dark: #0f172a;
+  --aluva-light: #f8fafc;
+  --aluva-border: #e2e8f0;
+  --aluva-text: #334155;
+}
+
+/* Ajustes globales */
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--aluva-text);
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Logo Oficial en Header */
+.navbar-brand .official-brand-logo {
+  max-height: 52px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* TOP BAR CORPORATIVA */
+.top-bar.light {
+  background-color: #0f172a !important;
+  color: #94a3b8;
+  border-bottom: 1px solid #1e293b;
+  padding: 8px 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.top-bar .top-contact-links {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 18px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.top-bar .top-contact-links li {
+  display: inline-flex !important;
+  align-items: center !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+}
+
+.top-bar .top-link-email {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  color: #cbd5e1 !important;
+  text-decoration: none !important;
+  vertical-align: middle !important;
+}
+
+.top-bar .top-link-email:hover {
+  color: #f59e0b !important;
+}
+
+.top-bar .top-contact-links i {
+  display: inline-block !important;
+  font-size: 0.95rem !important;
+  margin-right: 6px !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+}
+
+.top-bar .top-location-item {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  color: #94a3b8 !important;
+}
+
+/* REDES SOCIALES EN TOP BAR (INSTAGRAM Y TIKTOK HARMONIOSOS) */
+.top-social-list {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.top-social-circle {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  background-color: #1e293b !important;
+  color: #cbd5e1 !important;
+  transition: all 0.25s ease !important;
+  text-decoration: none !important;
+  border: 1px solid #334155 !important;
+}
+
+.top-social-circle svg {
+  width: 14px !important;
+  height: 14px !important;
+  fill: currentColor !important;
+}
+
+.top-social-circle.social-instagram:hover {
+  background-color: #e1306c !important;
+  color: #ffffff !important;
+  border-color: #e1306c !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(225, 48, 108, 0.35);
+}
+
+.top-social-circle.social-tiktok:hover {
+  background-color: #000000 !important;
+  color: #00f2fe !important;
+  border-color: #000000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 242, 254, 0.35);
+}
+
+/* BOTÓN FLOTANTE DE WHATSAPP */
+.whatsapp-float-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+  text-decoration: none !important;
+}
+
+.whatsapp-float-btn:hover {
+  background-color: #128c7e;
+  color: #ffffff;
+  transform: translateY(-4px) scale(1.03);
+}
+
+.whatsapp-float-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* NAVEGACIÓN PRINCIPAL */
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  letter-spacing: 0.5px;
+  color: #334155;
+  padding: 1rem 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #d97706;
+}
+
+/* BOTÓN CARRITO EN HEADER */
+.cart-trigger-btn {
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #0f172a;
+  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.cart-trigger-btn:hover {
+  color: #d97706;
+  transform: scale(1.08);
+}
+
+.cart-badge-count {
+  background-color: #d97706;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 50%;
+  padding: 2px 7px;
+  line-height: 1;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* OFF-CANVAS / DRAWER DE CARRITO ("TU PEDIDO") - SOLO CLICK */
+aside.pushy {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  width: 380px !important;
+  max-width: 90vw !important;
+  height: 100vh !important;
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  z-index: 99999 !important;
+  box-shadow: -6px 0 30px rgba(0, 0, 0, 0.45) !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s !important;
+  transform: translate3d(100%, 0, 0) !important;
+  visibility: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+body.pushy-open-right aside.pushy,
+aside.pushy.pushy-open {
+  transform: translate3d(0, 0, 0) !important;
+  visibility: visible !important;
+}
+
+/* Header del Carrito */
+.pushy .cart-header-title {
+  padding: 1.25rem 1.5rem;
+  background-color: #0f172a;
+  border-bottom: 1px solid #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.pushy .cart-header-title h3 {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pushy .pushy-link-close {
+  color: #94a3b8;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.pushy .pushy-link-close:hover {
+  color: #f59e0b;
+}
+
+/* Cuerpo del Carrito */
+.pushy .cart-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+.cart-item-row img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #334155;
+  flex-shrink: 0;
+}
+
+.cart-item-row .item-info {
+  flex-grow: 1;
+}
+
+.cart-item-row .item-info h5 {
+  font-size: 0.92rem;
+  color: #f8fafc;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.cart-item-row .item-info p {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.cart-item-row .btn-remove {
+  color: #ef4444;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 4px;
+}
+
+.cart-item-row .btn-remove:hover {
+  color: #f87171;
+}
+
+/* Footer del Carrito */
+.cart-footer-box {
+  padding: 1.25rem 1.5rem;
+  background-color: #1e293b;
+  border-top: 1px solid #334155;
+  flex-shrink: 0;
+}
+
+.coupon-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.coupon-group input {
+  flex-grow: 1;
+  background-color: #0f172a;
+  border: 1px solid #475569;
+  color: #ffffff;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  outline: none;
+}
+
+.coupon-group input:focus {
+  border-color: #d97706;
+}
+
+.coupon-group button {
+  background-color: #d97706;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.coupon-group button:hover {
+  background-color: #b45309;
+}
+
+.cart-totals-summary {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.cart-totals-summary div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.cart-totals-summary .grand-total-line {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  border-top: 1px solid #475569;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.btn-checkout-aluva {
+  width: 100%;
+  background-color: #d97706;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-checkout-aluva:hover {
+  background-color: #b45309;
+}
+
+/* FILTROS DE CATEGORÍA EN CATÁLOGO */
+.catalog-filter-btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  margin: 4px;
+}
+
+/* Tarjetas de Producto en Catálogo */
+.product-card-aluva {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-aluva:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.product-card-aluva .product-thumb {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+
+.product-card-aluva .product-thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card-aluva:hover .product-thumb img {
+  transform: scale(1.05);
+}
+
+.product-card-aluva .product-content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card-aluva .product-ref {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.product-card-aluva .product-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #d97706;
+  margin-bottom: 4px;
+}
+
+.product-card-aluva .product-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.product-card-aluva .product-desc {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.product-card-aluva .product-fabric-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  color: #334155;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.product-card-aluva .product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1rem;
+}
+
+.product-card-aluva .price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.btn-add-cart-aluva {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-add-cart-aluva:hover {
+  background-color: #d97706;
+}
+
+/* Secciones Informativas y Testimonios con Fotos de Clientes */
+.info-card-aluva {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #d97706;
+  padding: 1.75rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  height: 100%;
+}
+
+.testimonial-card-aluva {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 1.75rem;
+  border-radius: 8px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-img-wrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.testimonial-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-card-aluva p {
+  font-style: italic;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.testimonial-card-aluva footer {
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  color: #0f172a;
+  margin-top: 1rem;
+}
+
+/* Módulo de Tracking */
+.tracking-card-aluva {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.tracking-form-group {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1.5rem;
+}
+
+.tracking-form-group input {
+  flex-grow: 1;
+  padding: 12px 16px;
+  border: 2px solid #cbd5e1;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.tracking-form-group input:focus {
+  border-color: #d97706;
+}
+
+.tracking-form-group button {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #0f172a;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tracking-form-group button:hover {
+  background-color: #d97706;
+  border-color: #d97706;
+}
+
+.tracking-result-box {
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 1.5rem;
+  display: none;
+}
+
+.tracking-result-box.active {
+  display: block;
+}
+
+.tracking-steps-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.tracking-steps-nav::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 10%;
+  right: 10%;
+  height: 3px;
+  background-color: #cbd5e1;
+  z-index: 1;
+}
+
+.tracking-step-item {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.tracking-step-item .circle-node {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 0 auto 8px auto;
+}
+
+.tracking-step-item.completed .circle-node {
+  background-color: #10b981;
+}
+
+.tracking-step-item.active .circle-node {
+  background-color: #d97706;
+}
+
+.tracking-step-item .step-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.tracking-step-item.completed .step-text,
+.tracking-step-item.active .step-text {
+  color: #0f172a;
+}
+
+/* Footer Corporativo */
+footer.footer-aluva {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 3rem 0 1.5rem 0;
+  border-top: 4px solid #d97706;
+}
+
+footer.footer-aluva a {
+  color: #cbd5e1;
+}
+
+footer.footer-aluva a:hover {
+  color: #f59e0b;
+}
+
+.footer-timbre-img {
+  max-width: 90px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #334155;
+}
