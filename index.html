@@ -127,6 +127,9 @@
                         <a class="nav-link" href="#nosotros">Quiénes Somos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="catalogo.html">Catálogo 2026</a>
                     </li>
                     <li class="nav-item">
@@ -147,13 +150,13 @@
     </nav>
     <!-- END NAVBAR -->
 
-    <!-- HERO BANNER -->
-    <section class="py-5 bg-dark text-white text-center position-relative" style="background: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), url('assets/images/CHAQUETA SOFSHEL 1.jpeg') center/cover no-repeat; min-height: 440px; display: flex; align-items: center;">
+    <!-- HERO BANNER (EFECTO PARALLAX - REQUERIMIENTO OBLIGATORIO) -->
+    <section id="hero-banner" class="hero-parallax-banner py-5 text-white text-center position-relative">
         <div class="container py-4">
-            <span class="badge badge-warning text-uppercase px-3 py-2 mb-3" style="letter-spacing: 1px;">Catálogo Oficial 2026</span>
-            <h1 class="display-4 font-weight-bold text-white mb-3">ALUVA: Ropa y Elementos de Protección Personal</h1>
+            <span class="badge badge-warning text-uppercase px-3 py-2 mb-3" style="letter-spacing: 1px;">Catálogo Oficial 2026 | Indumentaria Industrial</span>
+            <h1 class="display-4 font-weight-bold text-white mb-3">ALUVA: Indumentaria Técnica Premium y EPP</h1>
             <p class="lead text-light max-600 mx-auto mb-4">
-                Calidad, innovación en textiles y la resistencia que tu equipo necesita. Diseñamos y personalizamos cada prenda con la identidad de tu empresa o tus gustos personales.
+                Diseño y confección industrial con tecnología textil avanzada para la faena extrema y el vestuario corporativo.
             </p>
             <div>
                 <a href="catalogo.html" class="btn btn-warning btn-lg text-dark font-weight-bold text-uppercase px-4 mr-2 mb-2">Explorar Catálogo Completo</a>
@@ -161,36 +164,31 @@
             </div>
         </div>
     </section>
+    <!-- END HERO BANNER -->
 
-    <!-- PILARES / CARACTERÍSTICAS -->
-    <section class="py-5 bg-light">
+    <!-- PILARES / CARACTERÍSTICAS (CSS GRID & FLEXBOX) -->
+    <section id="pilares-section" class="py-5 bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="media align-items-center p-3 bg-white rounded shadow-sm">
-                        <i class="ti-shield text-warning display-4 mr-3"></i>
-                        <div class="media-body">
-                            <h5 class="mt-0 font-weight-bold">Máxima Durabilidad</h5>
-                            <p class="mb-0 text-muted small">Telas antidesgarro Ripstop y costuras reinforced para alta exigencia.</p>
-                        </div>
+            <div class="pillars-grid-modern" id="pilares-grid">
+                <div class="pilar-card-aluva">
+                    <i class="ti-shield text-warning"></i>
+                    <div>
+                        <h5 class="mt-0 font-weight-bold mb-1">Máxima Durabilidad</h5>
+                        <p class="mb-0 text-muted small">Telas antidesgarro Ripstop y costuras reforzadas para faena pesada.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <div class="media align-items-center p-3 bg-white rounded shadow-sm">
-                        <i class="ti-user text-warning display-4 mr-3"></i>
-                        <div class="media-body">
-                            <h5 class="mt-0 font-weight-bold">Personalización de Marca</h5>
-                            <p class="mb-0 text-muted small">Bordado y estampado corporativo con el logotipo de tu empresa.</p>
-                        </div>
+                <div class="pilar-card-aluva">
+                    <i class="ti-user text-warning"></i>
+                    <div>
+                        <h5 class="mt-0 font-weight-bold mb-1">Personalización de Marca</h5>
+                        <p class="mb-0 text-muted small">Bordado y estampado corporativo con el logotipo de tu empresa.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="media align-items-center p-3 bg-white rounded shadow-sm">
-                        <i class="ti-truck text-warning display-4 mr-3"></i>
-                        <div class="media-body">
-                            <h5 class="mt-0 font-weight-bold">Despacho Nacional</h5>
-                            <p class="mb-0 text-muted small">Envíos rastreables en tiempo real vía Starken, Chilexpress y UPS.</p>
-                        </div>
+                <div class="pilar-card-aluva">
+                    <i class="ti-truck text-warning"></i>
+                    <div>
+                        <h5 class="mt-0 font-weight-bold mb-1">Despacho Nacional</h5>
+                        <p class="mb-0 text-muted small">Envíos rastreables en tiempo real vía Starken, Chilexpress y UPS.</p>
                     </div>
                 </div>
             </div>
@@ -205,7 +203,7 @@
                     <h2 class="font-weight-bold text-uppercase mb-2">Quiénes Somos</h2>
                     <div class="bg-warning mx-auto" style="height: 3px; width: 60px;"></div>
                     <p class="text-muted mt-3 max-700 mx-auto">
-                        En <strong>ALUVA</strong>, nos especializamos en el diseño, confección y distribución de ropa de trabajo, vestuario corporativo y Equipos de Protección Personal (EPP). Nacimos para responder a las exigencias reales del sector faenero e industrial, combinando durabilidad y comodidad con un alto estándar de personalización.
+                        En <strong>ALUVA</strong>, nos especializamos en el diseño, confección y distribución de ropa de trabajo, vestuario corporativo y Equipos de Protección Personal (EPP). Nacimos para responder a las exigencias reales del sector faenero e industrial chileno, combinando durabilidad, seguridad y comodidad con un alto estándar de personalización.
                     </p>
                 </div>
 
@@ -222,7 +220,7 @@
                         <div class="info-card-aluva">
                             <h4 class="font-weight-bold text-uppercase mb-3"><i class="fa fa-eye text-warning mr-2"></i> Visión</h4>
                             <p class="text-secondary mb-0">
-                                Ser el referente y aliado estratégico clave en la confección y suministro de ropa industrial, EPP y vestuario personalizado, destacados por la innovación constante en materiales, el diseño a medida y el compromiso absoluto con la seguridad y bienestar de nuestros usuarios.
+                                Ser el referente y aliado estratégico clave en la confección y suministro de ropa industrial, EPP y vestuario personalizado, destacados por la innovación constante en materiales, el diseño a medida y el compromiso absoluto con la seguridad y bienestar de nuestros usuarios en todo el territorio chileno.
                             </p>
                         </div>
                     </div>
@@ -230,11 +228,51 @@
             </div>
         </section>
 
-        <!-- PREVIEW DE CATÁLOGO DESTACADO (MUESTRA DE PRODUCTOS ÚNICOS) -->
-        <section class="py-5 bg-light">
+        <!-- SECCIÓN EQUIPO DE DESARROLLO Y GESTIÓN ALUVA -->
+        <section id="equipo" class="py-5" style="background-color: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <div>
+                <div class="text-center mb-5">
+                    <h2 class="font-weight-bold text-uppercase mb-2">Equipo de Desarrollo y Gestión</h2>
+                    <div class="bg-warning mx-auto" style="height: 3px; width: 60px;"></div>
+                    <p class="text-muted mt-3 max-700 mx-auto">
+                        Profesionales a cargo de la arquitectura frontend, gestión de requerimientos, diseño y aseguramiento de calidad del proyecto ALUVA.
+                    </p>
+                </div>
+
+                <div class="team-grid-modern" id="team-grid">
+                    <div class="team-card-aluva">
+                        <div class="team-avatar-placeholder">SD</div>
+                        <h5 class="team-name">Sebastián Donoso</h5>
+                        <span class="team-role">Desarrollador y Maquetador Principal</span>
+                    </div>
+                    <div class="team-card-aluva">
+                        <div class="team-avatar-placeholder">BM</div>
+                        <h5 class="team-name">Brunno Mori Campos</h5>
+                        <span class="team-role">Analista de Requerimientos</span>
+                    </div>
+                    <div class="team-card-aluva">
+                        <div class="team-avatar-placeholder">HG</div>
+                        <h5 class="team-name">Hugo González Alarcón</h5>
+                        <span class="team-role">Encargado de Contenidos y Gráfica</span>
+                    </div>
+                    <div class="team-card-aluva">
+                        <div class="team-avatar-placeholder">VM</div>
+                        <h5 class="team-name">Víctor Maureira Flores</h5>
+                        <span class="team-role">Documentador y Control de Calidad (QA)</span>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <small class="text-muted text-uppercase" style="letter-spacing: 0.06em;">Desarrollado para el sector faenero e industrial chileno &bull; Los Andes, Valparaíso</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREVIEW DE CATÁLOGO DESTACADO -->
+        <section id="productos-destacados" class="py-5 bg-light">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+                    <div class="mb-2 mb-md-0">
                         <h2 class="font-weight-bold text-uppercase mb-0">Productos Destacados</h2>
                         <p class="text-muted mb-0 small">Indumentaria con estándares industriales de resistencia (Catálogo 2026)</p>
                     </div>
@@ -325,7 +363,7 @@
             </div>
         </section>
 
-        <!-- SECCIÓN TESTIMONIOS CON FOTOS REALES DE CLIENTES -->
+        <!-- SECCIÓN TESTIMONIOS CON CLIENTES REALES -->
         <section id="testimonios" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
@@ -429,6 +467,10 @@
         <div class="container text-center">
             <img src="assets/images/ALUVA TIMBRE.jpeg" alt="Timbre Oficial ALUVA" class="footer-timbre-img mb-3">
             <ul class="list-inline mb-3">
+                <li class="list-inline-item mr-3"><a href="#nosotros">Quiénes Somos</a></li>
+                <li class="list-inline-item mr-3"><a href="#equipo">Equipo</a></li>
+                <li class="list-inline-item mr-3"><a href="catalogo.html">Catálogo</a></li>
+                <li class="list-inline-item mr-3"><a href="seguimiento.html">Seguimiento</a></li>
                 <li class="list-inline-item mr-3"><a href="https://www.instagram.com/aluva.outdoor" target="_blank" rel="noopener">Instagram</a></li>
                 <li class="list-inline-item"><a href="https://www.tiktok.com/@aluva.outdoor" target="_blank" rel="noopener">TikTok</a></li>
             </ul>
